@@ -30,5 +30,7 @@ map.on('locationfound', (e) => {
 });
 
 // Solicitar la ubicación del usuario 
-map.locate({setView: true, maxZoom: 16});
+map.locate({
+    watch: true
+});
 // map.locate();
